@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online RPS Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.0/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <style>
+        #registration, #game {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="registration" class="container">
+        <form>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="name">Adınızı daxil edin:</label>
+                        <input type="text" id="name" class="form-control" placeholder="Adınızı yazmağınız vacibdir">
+                    </div>
+                    <div class="form-group">
+                        <button id="start" class="btn btn-primary form-control">START</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="game" class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                left player
+            </div>
+            <div class="col-sm-6">
+                right player
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.0/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+    <script src="./firebase.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
